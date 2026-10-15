@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Padilha — CV</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --fg: #1c1917;
+      --muted: #78716c;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+      --border: #e7e5e4;
+      --card: #ffffff;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --font-mono: 'Space Mono', 'Consolas', monospace;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0c0a09;
+        --fg: #e7e5e4;
+        --muted: #a8a29e;
+        --accent: #60a5fa;
+        --accent-soft: #1e3a5f;
+        --border: #292524;
+        --card: #1c1917;
+        color-scheme: dark;
+      }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-body);
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+
+    header { margin-bottom: 32px; }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
+    }
+    header .subtitle {
+      font-size: 1.05rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    header .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 0.875rem;
+      color: var(--muted);
+      font-family: var(--font-mono);
+    }
+    header .links a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    header .links a:hover { text-decoration: underline; }
+
+    section { margin-bottom: 28px; }
+    section h2 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .project { margin-bottom: 20px; }
+    .project h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .project .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: var(--font-mono);
+      margin-bottom: 6px;
+    }
+    .project .meta a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .project .meta a:hover { text-decoration: underline; }
+    .project p {
+      font-size: 0.925rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .stat {
+      text-align: center;
+      padding: 12px 8px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .stat .num {
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      color: var(--accent);
+      font-variant-numeric: tabular-nums;
+    }
+    .stat .label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .skill-group h4 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .skill-group ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .skill-group li {
+      font-size: 0.8rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .info-row span { white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ryan Padilha</h1>
+    <p class="subtitle">Minecraft Bedrock Add-on Developer — Script API Focus</p>
+    <div class="links">
+      <span>Discord: rakimxz</span>
+      <a href="https://github.com/rakimx">github.com/rakimx</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Overview</h2>
+    <p style="font-size:0.925rem;">Bedrock add-on developer with 1+ year of experience building data-driven content using Script API, behavior/resource packs, JSON UI, and Blockbench. Experienced in both solo development and remote team collaboration for Minecraft Marketplace content.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Wand & Spells</h3>
+      <div class="meta">Solo Developer · 2025–Present · <a href="https://github.com/rakimx/wand-and-spells">GitHub</a></div>
+      <p>Magic add-on with a data-driven spell system. 67 spells across 7 elements processed by a central spell caster engine (~4,800 lines). Custom JSON UI for HUD and server forms, 3D attachable armor, interactive blocks, and full sound design.</p>
+      <div class="stats">
+        <div class="stat"><div class="num">67</div><div class="label">Spells</div></div>
+        <div class="stat"><div class="num">219</div><div class="label">Items</div></div>
+        <div class="stat"><div class="num">7.8k</div><div class="label">Lines of JS</div></div>
+        <div class="stat"><div class="num">16</div><div class="label">Entities</div></div>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Draconian Adventure</h3>
+      <div class="meta">Team Developer · Tucano Studios · Marketplace Title</div>
+      <p>Rideable dragons with flight systems, mounted combat abilities, boss entities (pirate eagle boss), custom particles, animations, spawn logic via functions, and sound integration. Published through partner studios (Waypoint / BlockLab).</p>
+    </div>
+
+    <div class="project">
+      <h3>Gladiador</h3>
+      <div class="meta">Solo Developer · 2025</div>
+      <p>Combat entity with full animation set (idle, walk, attack, death, spawn), animation controllers, and render controllers.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Scripting</h4>
+        <ul>
+          <li>@minecraft/server</li>
+          <li>@minecraft/server-ui</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Data-Driven</h4>
+        <ul>
+          <li>Entities</li>
+          <li>Items</li>
+          <li>Blocks</li>
+          <li>Spawn Rules</li>
+          <li>Loot Tables</li>
+          <li>Recipes</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Visual</h4>
+        <ul>
+          <li>Blockbench</li>
+          <li>Animations</li>
+          <li>Anim Controllers</li>
+          <li>Render Controllers</li>
+          <li>Attachables</li>
+          <li>Particles</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>UI & Other</h4>
+        <ul>
+          <li>JSON UI</li>
+          <li>Functions</li>
+          <li>Commands</li>
+          <li>Sound Design</li>
+          <li>Git / GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Details</h2>
+    <div class="info-row">
+      <span>Engine: Bedrock 1.21.60+</span>
+      <span>Languages: Portuguese (native), English (fluent)</span>
+      <span>Availability: 26h/week</span>
+    </div>
+  </section>
+</body>
+</html>
